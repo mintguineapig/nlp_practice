@@ -1,0 +1,33 @@
+model_config_bert:
+  model_name: "bert-base-uncased"
+  num_labels: 2
+  hidden_size: 768
+
+data_config_bert:
+  model_name: "bert-base-uncased"
+  max_len: 128
+  valid_size: 0.1
+  batch_size: 32
+
+model_config_modernbert:
+  model_name: "answerdotai/ModernBERT-base"
+  num_labels: 2
+  hidden_size: 768
+
+data_config_modernbert:
+  model_name: "answerdotai/ModernBERT-base"
+  max_len: 128
+  valid_size: 0.1
+  batch_size: 32
+
+train_config:
+  epochs: 5
+  learning_rate: 5e-5
+  log_steps: 50
+  optimizer: "adam"
+  scheduler: "constant"
+
+wandb_config:
+  project: "DSBA_nlp_week1_BERT_vs_ModernBERT"
+  name: "[imdb] model-comparison"
+  api_key: "1e765a3e571a7391ac2fec939bd9af87e121e7cb"
