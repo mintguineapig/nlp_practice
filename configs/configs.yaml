@@ -30,4 +30,4 @@ train_config:
 wandb_config:
   project: "DSBA_nlp_week1_BERT_vs_ModernBERT"
   name: "[imdb] model-comparison"
-  api_key: "1e765a3e571a7391ac2fec939bd9af87e121e7cb"
+  api_key: "####################" #본인의 API key 로 대체하세요. 
