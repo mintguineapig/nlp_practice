@@ -89,7 +89,11 @@ def collate_fn(batch: List[dict]) -> dict:
 
 <img width="481" height="389" alt="image" src="https://github.com/user-attachments/assets/b641d387-eba9-4785-8efc-37f789da8d60" />
 
-modernBERT의 성능이 BERT의 성능보다 더 좋다.
+ModernBERT : 0.90902
+
+BERT      : 0.89241
+
+modernBERT의 성능이 BERT의 성능보다 더 좋다. 
 
 modernBERT 는 BERT 와 유사한 파라미터 수를 갖지만, 미세하게 토크나이저와 같은 세부적인 아키텍처가 최적화되어있기 때문이다. 
 
