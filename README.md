@@ -89,9 +89,11 @@ def collate_fn(batch: List[dict]) -> dict:
 
 <img width="481" height="389" alt="image" src="https://github.com/user-attachments/assets/b641d387-eba9-4785-8efc-37f789da8d60" />
 
-ModernBERT : 0.90902
+| 모델        | 정확도(Accuracy) |
+|-------------|------------------|
+| ModernBERT  | 0.90902          |
+| BERT        | 0.89241          |
 
-BERT      : 0.89241
 
 modernBERT의 성능이 BERT의 성능보다 더 좋다. 
 
