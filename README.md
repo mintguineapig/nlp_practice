@@ -63,7 +63,7 @@ python src/main.py
 ### 1. 사전 토크나이징 데이터셋
 ```python
 def __getitem__(self, idx: int) -> dict:
-    return {key: self.dataset[key][idx] for key in self.dataset}
+    return {key: self.dataset[idx][key] for key in self.dataset}
 ```
 
 ### 2. 간결한 모델 정의
