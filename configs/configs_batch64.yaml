@@ -7,7 +7,8 @@ data_config_bert:
   model_name: "bert-base-uncased"
   max_len: 128
   valid_size: 0.1
-  batch_size: 32
+  batch_size: 64
+  sample_size: 1000  # 테스트용 작은 샘플
 
 model_config_modernbert:
   model_name: "answerdotai/ModernBERT-base"
@@ -18,7 +19,8 @@ data_config_modernbert:
   model_name: "answerdotai/ModernBERT-base"
   max_len: 128
   valid_size: 0.1
-  batch_size: 32
+  batch_size: 64
+  sample_size: 1000  # 테스트용 작은 샘플
 
 train_config:
   epochs: 5
@@ -26,8 +28,9 @@ train_config:
   log_steps: 50
   optimizer: "adam"
   scheduler: "constant"
+  gradient_accumulation_steps: 1
 
 wandb_config:
   project: "DSBA_nlp_week1_BERT_vs_ModernBERT"
-  name: "[imdb] model-comparison"
+  name: "[imdb] model-comparison-batch64"
   api_key: "1e765a3e571a7391ac2fec939bd9af87e121e7cb" # 본인 API key 로 대체하세요. 

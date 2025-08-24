@@ -26,8 +26,9 @@ train_config:
   log_steps: 50
   optimizer: "adam"
   scheduler: "constant"
+  gradient_accumulation_steps: 32
 
 wandb_config:
   project: "DSBA_nlp_week1_BERT_vs_ModernBERT"
-  name: "[imdb] model-comparison"
+  name: "[imdb] model-comparison-batch1024"
   api_key: "1e765a3e571a7391ac2fec939bd9af87e121e7cb" # 본인 API key 로 대체하세요. 
